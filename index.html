@@ -20,7 +20,8 @@
     <header>
         <div id="header-copy" class="col-lg-9 col-md-10 col-sm-12 col-12">
             <div id="page-main-title"><a class="no-underline" href="index.html">
-                    <h1>George Travis</h1>
+                    <h1 class="d-none d-md-block">George Travis</h1>
+                    <h3 class="d-block d-md-none">George Travis</h3>
                 </a>
                 <div id="mini-nav" class="d-block d-md-none">
                     <ul id="links-list-sm">
@@ -52,7 +53,8 @@
                 <h2>About Me</h2>
             </div>
             <div id="main-content-contents">
-                <img id="profile-pic" src="assets/images/Me.jpg" alt="George Travis" width="250px">
+                <img class="d-none d-sm-block" id="profile-pic" src="assets/images/Me.jpg" alt="George Travis" width="250px">
+                <img class="d-block d-sm-none" id="profile-pic-col" src="assets/images/Me.jpg" alt="George Travis" width="200px">
                 <article id="about-me">
                     <!-- This is an article I inserted to make all my <p> elements behave as one in the parent flex container, which I since removed -->
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nibh ac magna accumsan,
