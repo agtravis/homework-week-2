@@ -1,23 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/style.css">
 
     <title>Portfolio with Boostrap Elements</title>
-  </head>
-  <body>
+</head>
+
+<body>
+
 
     <header>
-        <div id="header-copy">
-            <div id="page-main-title"><a class ="no-underline" href="index.html"><h1>George Travis</h1></a>
+        <div id="header-copy" class="col-lg-9 col-md-10 col-sm-12 col-12">
+            <div id="page-main-title"><a class="no-underline" href="index.html">
+                    <h1>George Travis</h1>
+                </a>
             </div>
             <nav id="contents-links">
+                <!-- I have chosen to use a list to display my page links, primarily because it means they can be treated as a single object -->
                 <ul id="links-list">
                     <li><a href="index.html">About</a></li>
                     <li>|</li>
@@ -29,10 +36,77 @@
         </div>
     </header>
 
+    <div id="content-container">
+        <div id="main-content" class="col-lg-9 col-md-10 col-sm-12 col-12">
+            <div id="main-content-header">
+                <h2>About Me</h2>
+            </div>
+            <div id="main-content-contents">
+                <img id="profile-pic" src="assets/images/Me.jpg" alt="George Travis" width="250px">
+                <article id="about-me">
+                    <!-- This is an article I inserted to make all my <p> elements behave as one in the parent flex container, which I since removed -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nibh ac magna accumsan,
+                        nec luctus mauris posuere. Mauris feugiat turpis vitae ex lobortis commodo. Donec sed leo lorem.
+                        Aenean ut dignissim eros. Curabitur dapibus, tellus non ullamcorper rutrum, nisl lectus
+                        fringilla
+                        risus,
+                        in dapibus sapien diam non enim. Nulla eu velit nec lacus rutrum cursus. Donec at nisi quam.
+                        Proin
+                        id
+                        nisi eu felis pharetra molestie quis in ligula. Integer at eros quis mi iaculis ultricies vitae
+                        quis
+                        lectus. Donec eget varius arcu, feugiat laoreet libero. Sed convallis libero et nisi iaculis
+                        pellentesque.
+                        Vestibulum quis tellus lacus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nibh ac magna accumsan,
+                        nec luctus mauris posuere. Mauris feugiat turpis vitae ex lobortis commodo. Donec sed leo lorem.
+                        Aenean ut dignissim eros. Curabitur dapibus, tellus non ullamcorper rutrum, nisl lectus
+                        fringilla
+                        risus,
+                        in dapibus sapien diam non enim. Nulla eu velit nec lacus rutrum cursus. Donec at nisi quam.
+                        Proin
+                        id
+                        nisi eu felis pharetra molestie quis in ligula. Integer at eros quis mi iaculis ultricies vitae
+                        quis
+                        lectus. Donec eget varius arcu, feugiat laoreet libero. Sed convallis libero et nisi iaculis
+                        pellentesque.
+                        Vestibulum quis tellus lacus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nibh ac magna accumsan,
+                        nec luctus mauris posuere. Mauris feugiat turpis vitae ex lobortis commodo. Donec sed leo lorem.
+                        Aenean ut dignissim eros. Curabitur dapibus, tellus non ullamcorper rutrum, nisl lectus
+                        fringilla
+                        risus,
+                        in dapibus sapien diam non enim. Nulla eu velit nec lacus rutrum cursus. Donec at nisi quam.
+                        Proin
+                        id
+                        nisi eu felis pharetra molestie quis in ligula. Integer at eros quis mi iaculis ultricies vitae
+                        quis
+                        lectus. Donec eget varius arcu, feugiat laoreet libero. Sed convallis libero et nisi iaculis
+                        pellentesque.
+                        Vestibulum quis tellus lacus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia nibh ac magna accumsan,
+                        nec luctus mauris posuere. Mauris feugiat turpis vitae ex lobortis commodo. Donec sed leo lorem.
+                        Aenean ut dignissim eros. Curabitur dapibus, tellus non ullamcorper rutrum, nisl lectus
+                        fringilla
+                        risus,
+                        in dapibus sapien diam non enim. Nulla eu velit nec lacus rutrum cursus. Donec at nisi quam.
+                        Proin
+                        id
+                        nisi eu felis pharetra molestie quis in ligula. Integer at eros quis mi iaculis ultricies vitae
+                        quis
+                        lectus. Donec eget varius arcu, feugiat laoreet libero. Sed convallis libero et nisi iaculis
+                        pellentesque.
+                        Vestibulum quis tellus lacus.</p>
+                </article>
+            </div>
+        </div>
+    </div>
 
 
 
-
+    <footer>
+        <p>Copyright Alexander George Travis 2019 ©</p>
+    </footer>
 
 
 
@@ -40,8 +114,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

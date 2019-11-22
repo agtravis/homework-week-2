@@ -30,14 +30,16 @@ header {
     top: 0;
     width: 100%;
     z-index: 2;
+    display: flex;
+    justify-content: center;
 }
 
 /*I was struggling to make the title not sit on top of the border of the header (thinning the width of the header border around its own edge),
  so I added a margin of 0.5px.*/
 #header-copy {
     display: flex;
-    margin: 0 auto;
-    width: 960px;
+    justify-content: center;
+    padding: 0;
     margin-bottom: 0.5px;
 }
 
@@ -84,6 +86,11 @@ ul#links-list li a {
     font-weight: 200;
 }
 
+#content-container {
+    display: flex;
+    justify-content: center;
+}
+
 /*I was struggling to make the border line up with the header, but I wanted to keep the width an easy number,
 so instead I made an outline and offset it to place it flush with the edge of the div instead of on the outside.*/
 /*width = 920 + 20 + 20 = 960px*/
@@ -91,8 +98,7 @@ so instead I made an outline and offset it to place it flush with the edge of th
     background-color: #ffffff;
     outline: 1px solid #dddddd;
     outline-offset: -1px;
-    width: 920px;
-    margin: 135px auto 109px auto;
+    margin: 135px 0 109px 0;
     line-height: 1.7em;
     padding: 20px;
 }
