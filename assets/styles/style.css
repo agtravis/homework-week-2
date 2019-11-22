@@ -67,20 +67,31 @@ is deprecated.*/
 /*Again, after learning flex, I removed the word spacing here...*/
 ul#links-list {
     list-style: none;
-    /*word-spacing: 1.2em;*/
     display: flex; 
     justify-content: flex-end;
 }
 
+ul#links-list-sm {
+    list-style: none;
+    display: flex; 
+    margin-bottom: 0;
+    justify-content: space-around;
+    padding: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #666666;
+}
+
 /*To force the list to display horizontally*/
 ul#links-list li {    
-    /*display: inline; - Removed since 'row' is now the default.*/
-    margin-left: 1.2em; /*Added back the spacing, but keeps flush on the right side.*/
+    margin-left: 1.2em;
 }
 
 
+
+
 /*To remove underlined/default link styles*/
-ul#links-list li a {
+ul#links-list li a,
+ul#links-list-sm li a {
     text-decoration: none;
     color: #666666;
     font-weight: 200;
@@ -134,6 +145,10 @@ img#profile-pic {
 h1 {
     font-family: Georgia, Times, 'Times New Roman', serif;
     color: #ffffff;
+}
+
+h1 a {
+    text-decoration: none;
 }
 
 h2 {

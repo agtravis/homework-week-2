@@ -20,10 +20,19 @@
     <header>
         <div id="header-copy" class="col-lg-9 col-md-10 col-sm-12 col-12">
             <div id="page-main-title"><a class="no-underline" href="index.html">
-                    <h1>George Travis</h1>
+                    <h1 class="no-underline">George Travis</h1>
                 </a>
+                <div id="mini-nav" class="d-block d-md-none">
+                    <ul id="links-list-sm">
+                        <li><a href="index.html">About</a></li>
+                        <li>|</li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li>|</li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <nav id="contents-links">
+            <nav id="contents-links" class="d-none d-md-block">
                 <!-- I have chosen to use a list to display my page links, primarily because it means they can be treated as a single object -->
                 <ul id="links-list">
                     <li><a href="index.html">About</a></li>
@@ -33,6 +42,7 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
