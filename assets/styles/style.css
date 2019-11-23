@@ -69,6 +69,10 @@ ul#links-list li a, ul#links-list-sm li a {
     font-weight: 200;
 }
 
+ul#links-list-sm li a:hover {
+    color: #ffffff;
+}
+
 .nav-highlight:hover {
     background-color: #666666;
 }
