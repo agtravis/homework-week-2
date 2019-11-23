@@ -142,9 +142,15 @@ footer p {
     position: relative;
 }
 
+
 img.folioImg {
     width: 50%;
     margin: auto;
+}
+
+img.folio-sm {
+    width: 100%;
+    margin-bottom: 10%;
 }
 
 .carousel-control-next {
@@ -160,9 +166,27 @@ img.folioImg {
     background-color: #4aaaa5;
     color: #ffffff;
     position: absolute;
-    bottom: 10%;
+    top: 0;
     width: 75%;
     left: 12.5%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+a.a-sm {
+    position: relative;
+}
+
+.project-link-sm {
+    text-decoration: none;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 100%;
     height: 15%;
     display: flex;
     justify-content: center;
