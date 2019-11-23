@@ -1,15 +1,3 @@
-/*I'm not sure if this is conventional, but I want the width to be 100% and I found I had alignment issues with content.
-I discovered this was down to a margin of 8px in the 'user agent stylesheet' via dev-tools in Chrome, so I overwrote
-that margin in the body styling.*/
-/*UPDATE - After learning of CSS resets, I understand this (^) is what was happening. I still don't want to use a CSS reset,
-because I don't want to remove ALL formatting.*/
-
-/*My CSS selectors:
-Initially I had coded all my CSS selectors by ID and by class in association with the element type (e.g. 'ul#links').
-However, after learning of the concept of semantic tags ('<section>', etc.) I removed all 'div's from the selector, that way I could easily
-reclassify them as <section>s in the HTML, since the ID attribute remains. I still prefer to fully name my selectors (with element)
-because it helps me understand quickly to what they are referring.*/
-
 body {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -20,8 +8,6 @@ body {
     margin: 0px;
 }
 
-/*I have used 'z-index' here despite the recommendation to avoid if possible. There was an issue when I scrolled with content going over the header,
-and giving the header a z-index of '2' solved this issue. Since it applies to the header only, I think it is a controlled, one-time usage.*/
 header {
     background-color: #ffffff;
     border-bottom: 3px solid #666666;
@@ -34,8 +20,6 @@ header {
     justify-content: center;
 }
 
-/*I was struggling to make the title not sit on top of the border of the header (thinning the width of the header border around its own edge),
- so I added a margin of 0.5px.*/
 #header-copy {
     display: flex;
     justify-content: center;
@@ -43,15 +27,12 @@ header {
     margin-bottom: 0.5px;
 }
 
-/*Previous to learning about 'display: flex' and 'flex-grow' I was floating this div left...*/
 #page-main-title {
     flex-grow: 1;
     background-color: #4aaaa5;
     text-align: center;
 }
 
-/*...and this div right to achieve the aesthetic I wanted. I changed it after learning the new technique, and that using 'float' for layout purposes
-is deprecated.*/
 #contents-links {
     flex-grow: 2;
     text-align: right;
@@ -59,8 +40,6 @@ is deprecated.*/
 }
 
 
-/*To remove bullet points and adjust the spread*/
-/*Again, after learning flex, I removed the word spacing here...*/
 ul#links-list {
     list-style: none;
     display: flex; 
@@ -77,15 +56,10 @@ ul#links-list-sm {
     border-top: 1px solid #666666;
 }
 
-/*To force the list to display horizontally*/
 ul#links-list li {    
     margin-left: 1.2em;
 }
 
-
-
-
-/*To remove underlined/default link styles*/
 ul#links-list li a,
 ul#links-list-sm li a {
     text-decoration: none;
@@ -98,9 +72,6 @@ ul#links-list-sm li a {
     justify-content: center;
 }
 
-/*I was struggling to make the border line up with the header, but I wanted to keep the width an easy number,
-so instead I made an outline and offset it to place it flush with the edge of the div instead of on the outside.*/
-/*width = 920 + 20 + 20 = 960px*/
 #main-content {
     background-color: #ffffff;
     outline: 1px solid #dddddd;
@@ -117,23 +88,12 @@ so instead I made an outline and offset it to place it flush with the edge of th
 }
 
 
-/*As the homework directed, I tried not to use the property 'float', however I really felt design-wise I wanted
-my image to be exactly where I could put it with float, and I couldn't figure out how to do this with a flexbox.
-In addition, I found (using Google) that many web developers would pose this question, and some comments would
-flat out say it wasn't possible, and others would say to continue to use float.*/
-/*After a slack interaction with Spencer, he said this was valid usage of 'float', so I feel good about leaving it in.*/
-/*I have left in the flex-code I had <em>some</em> success with.*/
 #main-content-contents {
     width: 90%;
     margin: 30px auto;
-    /*display: flex; - this made the container element a flex box, but made all 4 paragraphs into row items
-    (fixed with a new parent container div for the paragraphs). The image also distorted.
-    flex-wrap: wrap; - this wrapped the text but not in the same way 'float' would.
-    flex-basis: auto; - this concept seemed a little out of my reach at this stage.*/
-}
+    }
 
 img#profile-pic {
-    /*align-self: baseline; - this stopped the image from distorting.*/
     float: left;
     margin: 7px 35px 15px 0;
 }
@@ -178,20 +138,17 @@ footer p {
     text-decoration: none;
 }
 
-/*This makes the links into a grid, spreading them out evenly on a line, and wrapping if there is enough items.*/
 #portfolio-links {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-/*This is positioned relatively so I can use absolute positioning in a child element.*/
 #portfolio-links a {
     position: relative;
     margin-bottom: 25px;
 }
 
-/*Using absolute positioning to place the text exactly where I want it on the image.*/
 .project-link {
     text-decoration: none;
     background-color: #4aaaa5;
@@ -210,7 +167,6 @@ footer p {
     margin-bottom: -3px;
 }
 
-/*This is just a paragraph with CSS to make it look like a link. It does nothing. I am assuming at some point we will use JavaScript or something to make this form functional.*/
 p#submit {
     background-color: #4aaaa5;
     color: #ffffff;
