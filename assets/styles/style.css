@@ -69,6 +69,10 @@ ul#links-list li a, ul#links-list-sm li a {
     font-weight: 200;
 }
 
+.nav-highlight:hover {
+    background-color: #666666;
+}
+
 #content-container {
     display: flex;
     justify-content: center;
@@ -123,6 +127,7 @@ footer {
     width: 100%;
     height: 50px;
     text-align: center;
+    z-index: 1080; /*z-index used by default in Bootstrap goes up in 10s to 1070, so I have set this to 1080*/
 }
 
 footer p {
