@@ -217,7 +217,7 @@ img.folio-sm {
 }
 
 p#submit {
-    background-color: #4aaaa5;
+    background-color: #015f5a;
     color: #ffffff;
     width: 250px;
     height: 45px;
@@ -230,5 +230,5 @@ p#submit {
 }
 
 p#submit:hover {
-    background-color: #015f5a;
+    background-color: #003a37;
 }
