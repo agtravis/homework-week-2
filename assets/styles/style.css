@@ -62,17 +62,17 @@ ul#links-list li {
     margin-left: 1.2em;
 }
 
-ul#links-list li a, ul#links-list-sm li a {
+
+ul#links-list li a, 
+ul#links-list-sm li a {
     text-decoration: none;
     color: #666666;
     font-weight: 200;
 }
 
+ul#links-list li a:hover, 
 ul#links-list-sm li a:hover {
     color: #ffffff;
-}
-
-.nav-highlight:hover {
     background-color: #666666;
 }
 
@@ -226,4 +226,9 @@ p#submit {
     align-items: center;
     font-family: Georgia, Times, 'Times New Roman', serif;
     cursor: pointer;
+    border: 1px solid #666666;
+}
+
+p#submit:hover {
+    background-color: #015f5a;
 }
