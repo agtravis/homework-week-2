@@ -124,8 +124,8 @@ h2 {
 }
 
 footer {
-    background-color: #666666;
-    border-top: 8px solid #4aaaa5;
+    background-color: #999999;
+    border-top: 3px solid #666666;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -137,7 +137,7 @@ footer {
 
 footer p {
     font-size: 0.7em;
-    color: #999999;
+    color: #015f5a;
     position: relative;
     top: 18px;
 }
@@ -217,7 +217,7 @@ img.folio-sm {
 }
 
 p#submit {
-    background-color: #015f5a;
+    background-color: #4aaaa5;
     color: #ffffff;
     width: 250px;
     height: 45px;
@@ -226,9 +226,8 @@ p#submit {
     align-items: center;
     font-family: Georgia, Times, 'Times New Roman', serif;
     cursor: pointer;
-    border: 1px solid #666666;
 }
 
 p#submit:hover {
-    background-color: #003a37;
+    background-color: #015f5a;
 }
