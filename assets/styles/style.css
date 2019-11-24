@@ -210,6 +210,12 @@ img.folio-sm {
     margin-bottom: -3px;
 }
 
+#username, 
+#email, 
+#message {
+    width: 100%;
+}
+
 p#submit {
     background-color: #4aaaa5;
     color: #ffffff;
