@@ -106,10 +106,12 @@ ul#links-list-sm li a:hover {
 img#profile-pic {
     float: left;
     margin: 7px 35px 15px 0;
+    width: 250px;
 }
 
 img#profile-pic-col {
     margin: 0 auto 30px auto;
+    width: 200px;
 }
 
 h1, h3 {
