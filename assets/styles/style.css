@@ -125,6 +125,10 @@ h2 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
+h2.about-myself {
+    font-size: 1.4em;
+}
+
 footer {
     background-color: #999999;
     border-top: 3px solid #666666;
