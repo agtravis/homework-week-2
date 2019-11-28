@@ -59,3 +59,40 @@ Here as well I have replaced the placeholder image and text with an actual link 
 Not much has changed on this page, except since the page is now responsive, I have changed the lengths of the ```input```s. Previously they were coded in the HTML with attributes, however now I have given them ```width: 100%;``` properties in the CSS, so now they contract when the screen is less wide proportionately.
 
 I also was unhappy with the way the button appear when it scrolled. It had the same color as the top border of the footer, and so when positioned behind or right up against the footer, it appeared to merge with it. I spent some time playing around with different color arrangements, sticking to the color scheme, until I was happy. I also gave a ```:hover``` pseudoclass to the button to darken it.
+
+## Form Validation & basic JavaScript
+
+I understand that HTML 5 has some potential to ensure a user will fill out a ```<form>``` correctly, for instance ```input type="email"``` means that if a user hasn't entered an '@' character for example, when the cursor is over the field in question, a message displays directing the user to address the issue.
+
+I had not planned on utilizing any JavaScript in this portfolio, because it clearly comes outside the boundary of the brief. However, after talking with Spencer on the subject, he encouraged me to go ahead and write some code to interface with the page, so I have. This is for my own personal desire to see a project behave the way I want it to, and I do not expect it to be considered towards my grade, as long as its inclusion does not negatively impact my grade! As such, I will be including a second ```readme.md``` to be a complete aside.
+
+## Learning from Feedback from Homework 1
+
+### Validating HTML
+
+In review of my first homework, Elrey provided me with this resource: https://validator.w3.org/#validate_by_input. In pointing out the flaws (which the forgiving browser chose to overlook) of my code, this proved very useful in two distinct ways.
+1. It obviously showed me where to correct my code. I had a couple of ```<div>```s I had not closed off on two of my HTML pages, and I would not have noticed this without the aid of this tool. I also had multiple ```<div>```s with the same ID, which had not caused any issues and therefore gone unnoticed since there was no CSS actually referencing the multiple IDs - removing the attributes fixed the issue.
+1. I was able to learn new concepts with regards to the HTML, both with regards to conventions (add ```<h#>``` tags to an ```<article>```) and definitions (the code copied from Bootstrap contained attributes I did not understand, and previously had assumed were simply essential for the code to work. However when the validation pointed out how one of the attributes was throwing an error, in order to fix the error I had to understand why there was an error. Specifically I am referring to ```aria-labelledby="dropdown_target"```, and in this instance it is to do with accessibility, and how a screen reader might title a section it is reading - to fix this I had to give another element an ID matching the value of this attribute, and then the reader would use the content of that element as the title for this element).
+
+![Validator Finds](https://github.com/agtravis/homework-week-2/blob/master/assets/images/html-errors-index.PNG)
+
+### In-line Styling
+
+I transferred the styling of the image (width) from an HTML attribut to the CSS. This makes complete sense.
+
+### Submit Button
+
+In my README for the first homework I had mentioned that instead of using a ```<submit>``` button for the form I had used ```<a>``` for the styling benefits this brings. I had indeed, as Elrey highlighted, used ```<p>``` tags. Beyond this observation, another error here was that I had used ```<p>``` with an ```href=""``` attribute. First, I removed the attribute, and second I styled the cursor to *appear* as though it is a link when it hovers over the element. I will be using JavaScript to make this element *behave* like a submit button. It remains a ```<p>```.
+
+### Personal Information
+
+I was marked down for not including a personal bio. I will be including that on this submission, and acknowledge that I will be updating this as I gain more experience and am exposed to conventions and techniques.
+
+## Future Endeavors
+
+I still expect to eventually make the contact form perform its anticipated function, beyond the JavaScript I have coded. Without knowing anything about it, form submission frequently uses PHP, and to interact with a database either SQL or JSON, whichever route we take.
+
+I hope to be able to implement the concept of *views* so I can write one page of HTML for the children and descendents of the ```<header>```, similar to how the CSS operates.
+
+Obviously my portfolio projects will be updated as they are completed, and I do not anticipate using my first homework as a real project for a professional portfolio (*"Here is a link to an inferior version of this portfolio!"*), that is only there as a placeholder example.
+
