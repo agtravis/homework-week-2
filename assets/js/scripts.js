@@ -1,11 +1,12 @@
-const contactForm = document.getElementById('contactForm');
-const submitButton = document.getElementById('submit');
-let userName = document.getElementById('username');
-let email = document.getElementById('email');
-let message = document.getElementById('message');
-let isNamed;
-let isEmailed;
-let isMessaged;
+var contactForm = document.getElementById('contactForm');
+var submitButton = document.getElementById('submit');
+var userName = document.getElementById('username');
+var email = document.getElementById('email');
+var message = document.getElementById('message');
+
+var isNamed;
+var isEmailed;
+var isMessaged;
 
 
 
@@ -37,7 +38,7 @@ submitButton.addEventListener('click', function () {
         alert('Please enter a message');
         message.focus();
     }
-    if (isNamed === true && isEmailed === true && isMessaged === true) {
+    if (isNamed && isEmailed && isMessaged) {
         contactForm.submit();
     }
 });

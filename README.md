@@ -64,7 +64,7 @@ I also was unhappy with the way the button appear when it scrolled. It had the s
 
 I understand that HTML 5 has some potential to ensure a user will fill out a ```<form>``` correctly, for instance ```input type="email"``` means that if a user hasn't entered an '@' character for example, when the cursor is over the field in question, a message displays directing the user to address the issue.
 
-I had not planned on utilizing any JavaScript in this portfolio, because it clearly comes outside the boundary of the brief. However, after talking with Spencer on the subject, he encouraged me to go ahead and write some code to interface with the page, so I have. This is for my own personal desire to see a project behave the way I want it to, and I do not expect it to be considered towards my grade, as long as its inclusion does not negatively impact my grade! As such, I will be including a second ```readme.md``` to be a complete aside.
+I had not planned on utilizing any JavaScript in this portfolio, because it clearly comes outside the boundary of the brief. However, after talking with Spencer on the subject, he encouraged me to push myself and and write some code to interface with the page, so I have. This is for my own personal desire to see a project behave the way I want it to, and I do not expect it to be considered towards my grade, as long as its inclusion does not negatively impact my grade (the ONLY content of my ```.js``` file relates to this, no other features exist)! As such, there is a second ```readme.md``` to be a complete aside [Here](https://github.com/agtravis/homework-week-2/blob/master/README2JS.md).
 
 ## Learning from Feedback from Homework 1
 

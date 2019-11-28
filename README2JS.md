@@ -1,8 +1,27 @@
 # Implementing Basic JavaScript for Form Validation
 
+I know that I will be referring to a lot of items in the HTML more than once, so in order to make my code easier to write (and to read) I start by getting those nodes and storing them as variables using the syntax:
 
+```var [appropriateName] = document.getElementById('elementIdName');```
 
+They are:
+1. The form itself
+1. The ```<p>``` element styled to look like a button
+1. The input field for 'Name'
+1. The input field for 'Email'
+1. The ```<textarea>``` for the message
 
+Next I declare three further variables but don't assign them a value yet. These will hold booleans.
+
+The actual function starts by implementing the ```addEventListener()``` method on the 'submit' ```<p>``` that listens for a user click. When the user clicks, a callback function runs, which will conditionally establish those boolean values.
+
+First the function simply checks to see if the ```value``` of the 'Name' field is ```''``` meaning is it empty, but using the operator ```!==```. If it is not empty, the user entered *something*, and the appropriate boolean is set to ```true```. If the field is blank, the boolean is ```false```, there is an alert to this effect, and the ```focus()``` method ensures that the user is clued in further by placing the curser in the right field.
+
+Second, a similar ```if/else``` statement performs a check on the 'Email' field, only this time there is a nested conditional statement if the user entered something. This time a further check is run to see if the input contains an '@' character. This is done by using ```'indexOf('@')'``` on the ```value```, and checking to see if it exists (if compared to a value of ```-1```using the ```!==``` operator, and returns ```false```, '@' **exists** and therefore has an index of *at least* ```0```. If ```true``` then the index is ```-1``` meaning it *does not exist*). Dependent on the outcomes, a boolean is assigned and/or a message is alerted. *I could have also used the operator ```&&``` and avoided a nested statement, but would have had to navigate having different alerts, this is a choice```.*
+
+Third, the function does the exact same thing as the first conditional but on the 'Message' field.
+
+Ultimately, if all three booleans have been returned ```true```, the form submits. All that happens so far with the code is that the user inputs can be seen in the URL bar, demonstrating that if the website were connecting to a server, *something* would happen.
 
 ## Regex
 
