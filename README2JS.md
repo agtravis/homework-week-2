@@ -23,6 +23,8 @@ Third, the function does the exact same thing as the first conditional but on th
 
 Ultimately, if all three booleans have been returned ```true```, the form submits. All that happens so far with the user-data is that the user inputs can be seen in the URL bar, demonstrating that if the website were connecting to a server, *something* would happen.
 
+![Validator Finds](https://github.com/agtravis/homework-week-2/blob/master/assets/images/URL.PNG)
+
 ## Regex
 
 I know it is possible to validate forms by using regular expressions. I also know that using "```regex```" as a solution for anything is an issue that is up for debate. My personal feeling on the subject is that while I might consider using it on a password field, I would NOT use it on an email field. The main reasoning behind this is that while a user might enter something that is syntactically correct, it still does not make it a valid email address. A better system would be to simply check for the main prerequisite (@), and then utilize a system whereby a user is automatically sent a confirmation email including a *"Click here to validate this email address"* link. Then once the user clicks that link, the email is confirmed as valid AND existing. This would also provide an extra layer of security as far as identity theft is concerned.
