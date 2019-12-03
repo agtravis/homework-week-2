@@ -3,12 +3,9 @@ var submitButton = document.getElementById('submit');
 var userName = document.getElementById('username');
 var email = document.getElementById('email');
 var message = document.getElementById('message');
-
 var isNamed;
 var isEmailed;
 var isMessaged;
-
-
 
 submitButton.addEventListener('click', function () {
     if (userName.value !== '') {
