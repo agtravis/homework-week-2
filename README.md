@@ -48,11 +48,29 @@ One area I really tried unsuccessfully to resolve was to change the color of the
 
 I did encounter some ```z-index``` issues with the carousel indicator glyphicon in that it was showing over the footer. I gave the footer a ```z-index``` of *2*, however this did not resolve in the same way it did for the header issues I was having in the first homework. After some research I discovered that Bootstrap classes use ```z-index``` values of *1000-1070*, so to be sure I set my footer ```z-index``` to *1080* and this proved the magic number, and worked perfectly. I expect there would be similar issues with the other glyhpicons, however my page doesn't scroll that far, and ```z-index``` is a property I have been directed to avoid where possible, so I have not assigned it anywhere else, but could add later if necessary.
 
-For the smaller screen portfolio, the images are simply ```display: block;``` and stacked on top of eachother with margin.
+### LATE EDIT
+
+In class I overheard some conversation about *responsive* images versus *fluid* images. This concerned me because I was unsure of the difference, and also if my attempt at including these concepts was accurate. After discussion with Dane, he showed me explicitly what was required, and so I spent some time adapting my portfolio page.
+
+I still have the carousel on the large screen size. Anything below large and the carousel disappears, and instead is a grid system using Bootstrap columns and rows. The column classes mean that the grid is responsive dependent on the size of the screen. Here is the collection of classes I am using for my portfolio page (screen size medium or smaller):
+
+```<div class="col-lg-6 col-md-6 col-sm-12 col-6">```
+
+The first class is irrelevant. It says that on large screen mode, this div will occupy 6 of the 12 columns, or 50%. However, in an ancestral container, ```d-lg-none``` is used as a class, which hides that whole ancestor (containing this descendent) on large screen mode. I have left it in in the event I later decide not to use the carousel for the large screen.
+
+The next class states that on medium size, the column will again occupy 6 of the available 12 allocations, and so does the final class for smart phone screens. The penultimate class here specifies that on the small size screen the column now occupies the full width of the div, taking up all 12 columns.
+
+Effectively this means that on large format there is a carousel, on medium it is 2 columns, on small it is 1 column, and on the smallest size again it is 2 columns.
+
+As the window width contracts, the columns get narrower. One way to handle content in this situation is to apply the Bootstrap class ```img-fluid``` to the images. I have opted to apply this so that the images will shrink as the window does, as opposed to having hard coded CSS widths applied, or ```@media``` queries.
 
 In both cases I have made the parent element of the image and text ```relative```, and the text is ```absolute``` and positioned in a place that works visually for me.
 
 Here as well I have replaced the placeholder image and text with an actual link to the first homework, and these links (and in the navbar dropdown) are coded with ```target="_blank"``` to ensure the browser opens in a new window.
+
+One buggy feature of using fluid images is how an ```absolute```ly positioned element over the fluid element behaves during motion. When the image dramatically changes sizes (when the screen size increases/decreases and columns switch from 6 to 12), the placement of the ```absolute``` element appears to shift position. It is positioned to a ```relative``` container, and so is fixed to that element *as it changes*. This gave me some difficulty trying to navigate, and so I decided that since Bootstrap applies a *mobile first* ethos to its styles, I should too. With that in mind I used Google's dev tools to view my page as a smart phone, and played with the CSS from there until I was happy - and then as a last step made sure it didn't look ridiculous on a larger image as it scaled.
+
+To counter this effect, instead of simply not using the class, I could incorporate the absolute element into that actual file of the image, therefore the image would not require any additional formatting, and thus would transition smoothly. However, on a very small screen, the text would not compensate for this (with ```<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">```), and could be illegible. Not having time enough to get too far into this, I opted for the best choice available to me and moved on.
 
 ## Contact.html
 
