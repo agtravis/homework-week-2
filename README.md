@@ -84,6 +84,8 @@ I understand that HTML 5 has some potential to ensure a user will fill out a ```
 
 I had not planned on utilizing any JavaScript in this portfolio, because it clearly comes outside the boundary of the brief. However, after talking with Spencer on the subject, he encouraged me to push myself and and write some code if I could to interface with the page, so I have. This is for my own personal desire to see a project behave the way I want it, and I do not expect it to be considered towards my final grade, as long as its inclusion does not negatively impact my grade (the ONLY content of my ```.js``` file relates to this, no other features exist). As such, there is a second ```readme.md``` to act as a coda to the project [here](https://github.com/agtravis/homework-week-2/blob/master/README2JS.md).
 
+I became aware that Bootstrap does provide form validation features very late in the run up to the submission date, after observing a class-mate's implementation. I would consider implementing some elements myself, however I do not like the layout of the form, and would want to apply a lot of my own styles to it. I do not have enough time to experiment at this point, and being completely honest, I prefer to use JavaScript for this anyway. If Bootstrap is intended to save you time, in this instance it would take me longer!
+
 ## Learning from Feedback from Homework 1
 
 ### Validating HTML
@@ -110,7 +112,7 @@ I was marked down for not including a personal bio. I will be including that on 
 
 I still expect to eventually make the contact form perform its anticipated function, beyond the JavaScript I have coded. Without knowing anything about it, form submission frequently uses PHP, and to interact with a database either SQL or JSON, whichever route we take.
 
-I hope to be able to implement the concept of *views* so I can write one page of HTML for the children and descendents of the ```<header>```, similar to how the CSS operates.
+I hope to be able to implement the concept of *views* so I can write one page of HTML for the children and descendents of the ```<header>```, similar to how the CSS operates when accessed from multiple webpages.
 
 Obviously my portfolio projects will be updated as they are completed, and I do not anticipate using my first homework as a real project for a professional portfolio (*"Here is a link to an inferior version of this portfolio!"*), that is only there as a placeholder example.
 
